@@ -88,6 +88,7 @@ def imprimirPalabras():
     palabra_concatenada = ''.join(palabraLista)
     print(palabra_concatenada)
 
+#muestra el menú principal del programa
 def SeleccionarMenu():
     while True:
         print("\n1. Cargar csv")
@@ -102,6 +103,7 @@ def SeleccionarMenu():
         except ValueError:
             print("Por favor, ingrese un número válido.")
 
+#selecciona la opción del menú y llama las funciones según la opción
 def menuPrincipal():
     while True:
         option = SeleccionarMenu()
